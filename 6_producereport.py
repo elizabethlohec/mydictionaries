@@ -48,7 +48,7 @@ ProduceDictionary={
     'Celery': {
         'cost': 3.07,
         'amt_sold': 18.5,
-        'total': 56.8
+        'total': 56.79
     },
     'Spinach': {
         'cost': 4.12,
@@ -193,7 +193,7 @@ ProduceDictionary={
     'Brussels sprouts': {
         'cost': 1.65,
         'amt_sold': 22.9,
-        'total': 37.79
+        'total': 37.78
     },
     'Kale': {
         'cost': 5.02,
@@ -206,4 +206,20 @@ ProduceDictionary={
         'total': 21.87
     }
 }
+
+
+
+for dict in ProduceDictionary:
+    cost=ProduceDictionary[dict]['cost']
+    amt_sold=ProduceDictionary[dict]['amt_sold']
+    stated_total=ProduceDictionary[dict]['total']
+
+    calc_total= round(cost * amt_sold, 2)
+    if calc_total != stated_total:
+        print(f'Produce Name: {dict}')
+        print(f'Calculated Total: ${calc_total:.2f}')
+        print(f'Stated Total: ${stated_total:.2f}')
+        print()
+        print()
+
 

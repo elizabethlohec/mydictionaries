@@ -14,8 +14,9 @@ print()
 print('*****  start section 1 - print dictionary ********')
 print()
 
-
-
+mydictionary=dict(m=8, n=9)
+print(mydictionary)
+print(f"Number of key-value pairs": {len(phonebook)]})
 
 
 print()
@@ -35,8 +36,6 @@ if name in phonebook:
     print(phonebook[name])
 else:
     print(f"{name} does not exist in the phonebook")
-
-
 
 
 
@@ -155,7 +154,6 @@ print()
 print('*****  end section 8 ********')
 print()
 
-"""
 
 print()
 print('*****  start section 9 - using random and converting to list ********')
@@ -175,6 +173,7 @@ print()
 print('*****  end section 9 ********')
 print()
 
+"""
 
 
 
